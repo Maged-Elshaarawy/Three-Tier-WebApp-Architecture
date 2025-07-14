@@ -1,7 +1,7 @@
 # Three-Tier-WebApp-Architecture
 # Highly Available Three-Tier AWS Architecture
 
-![Architecture Diagram](./WhatsApp%20Image%202025-06-15%20at%2022.56.27_09cc2acd.jpg)
+![Architecture Diagram](./Three-Tier-WebApp-Architecture.png)
 
 ## 🌐 Architecture Overview
 This solution implements a fault-tolerant three-tier web application across multiple Availability Zones (AZs) with:
