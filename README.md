@@ -27,7 +27,6 @@ This solution implements a fault-tolerant three-tier web application across mult
 - Communicates with:
   - Web tier via **ALB**
   - Database tier via **private VPC routes**
-- Auto Scaling Group for horizontal scaling
 
 ### 3️⃣ Data Tier (Private Subnets)
 - **Amazon RDS** (Multi-AZ deployment)
