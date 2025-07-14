@@ -38,3 +38,39 @@ This solution implements a fault-tolerant three-tier web application across mult
   - IAM database authentication
 
 ### 🚦 Traffic Flow
+-Users → Internet → ALB → Web Tier → App Tier → Database
+## 🔒 Security Design
+- **Network Segmentation**:
+  - Public/private subnet isolation
+  - NACLs for subnet-level filtering
+- **Access Control**:
+  - IAM roles for EC2 instances
+  - Security group least-privilege rules
+- **Data Protection**:
+  - RDS encryption (KMS)
+  - SSL/TLS for all communications
+
+## 🚀 Deployment Steps
+
+### Prerequisites
+- AWS account with VPC setup
+- Terraform (optional for IaC)
+
+### Manual Setup
+1. **VPC Configuration**:
+   ```bash
+   aws ec2 create-vpc --cidr-block 10.0.0.0/16
+   ALB Setup:
+
+# Create Application Load Balancer in public subnets
+
+# Configure listener rules for web tier
+
+# EC2 Deployment:
+
+# Launch web servers in public subnets
+
+# Launch app servers in private subnets
+
+# RDS Deployment:
+aws rds create-db-instance --engine mysql --db-instance-class db.t3.micro
